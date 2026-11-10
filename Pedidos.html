@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacto y Pedidos directos - Dulce Miga.">
+  <title>Dulce Miga | Pedidos y Contacto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Dulce <span>Miga</span></a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="Productos.html">Productos</a>
+      <a class="active" href="Pedidos.html">Pedidos</a>
+      <a href="Nosotros.html">Nosotros</a>
+    </nav>
+  </header>
+
+  <main class="section page-section">
+    <div class="section-heading">
+      <p class="eyebrow">ESTAMOS PARA ATENDERTE</p>
+      <h1>Contáctanos y Haz tu Pedido</h1>
+      <p>Comunícate directamente con nosotros por WhatsApp o envíanos un mensaje.</p>
+    </div>
+
+    <div class="contact-layout">
+      <!-- Tarjeta de información directa -->
+      <div class="contact-card">
+        <h3>Nuestros Canales</h3>
+        <p>¿Tienes alguna duda o deseas encargar una torta especial?</p>
+        
+        <div class="contact-info-item">
+          <span class="icon">💬</span>
+          <div>
+            <strong>WhatsApp Directo:</strong>
+            <p><a href="https://wa.me/573214106340" target="_blank" class="whatsapp-link"> 321 410 6340</a></p>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <span class="icon">✉️</span>
+          <div>
+            <strong>Correo Electrónico:</strong>
+            <p>DulceMiga@gmail.com</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulario para enviar pedido rápido a WhatsApp -->
+      <div class="contact-form-card">
+        <h3>Enviar Pedido por WhatsApp</h3>
+        <form id="whatsapp-order-form">
+          <label for="name">Tu Nombre</label>
+          <input type="text" id="name" placeholder="Escribe tu nombre" required>
+
+          <label for="product">Producto o Pedido</label>
+          <input type="text" id="product" placeholder="Ej: Torta de chocolate o Pan artesanal" required>
+
+          <label for="details">Detalles adicionales (opcional)</label>
+          <textarea id="details" rows="4" placeholder="Cantidades, fecha de entrega o instrucciones especiales..."></textarea>
+
+          <button type="submit" class="button submit-button btn-whatsapp-icon" style="width: 100%; margin-top: 15px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.205 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.006 3.674 3.749-1.005zm12.185-5.362c-.272-.136-1.611-.796-1.861-.887-.25-.091-.432-.136-.614.136-.182.273-.705.887-.864 1.069-.159.182-.318.205-.59.069-.273-.136-1.151-.424-2.193-1.353-.812-.724-1.36-1.619-1.52-1.892-.159-.273-.017-.42.119-.556.123-.122.273-.318.409-.477.136-.159.182-.273.273-.455.091-.182.045-.341-.023-.477-.068-.136-.614-1.477-.841-2.023-.222-.533-.448-.461-.614-.469-.159-.008-.341-.01-.523-.01s-.477.068-.727.341c-.25.273-.955.932-.955 2.273s.977 2.636 1.114 2.818c.136.182 1.923 2.936 4.659 4.116.651.281 1.159.45 1.556.576.654.208 1.25.179 1.72.109.524-.078 1.611-.659 1.838-1.296.227-.636.227-1.159.159-1.296-.068-.137-.25-.205-.523-.341z"/></svg>
+            Enviar Pedido por WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© <span class="year"></span> Dulce Miga. Contacto: contacto@dulcemiga.com | WhatsApp: 321 410 6340</p>
+    <p>Panadería artesanal</p>
+  </footer>
+</body>
+</html>

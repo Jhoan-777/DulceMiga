@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conoce los productos de Dulce Miga.">
+  <title>Dulce Miga | Productos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Dulce <span>Miga</span></a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a class="active" href="Productos.html">Productos</a>
+      <a href="Pedidos.html">Pedidos <span class="cart-count">0</span></a>
+      <a href="Nosotros.html">Nosotros</a>
+    </nav>
+  </header>
+
+  <main class="section page-section">
+    <div class="section-heading">
+      <p class="eyebrow">NUESTRO MOSTRADOR</p>
+      <h1>Productos</h1>
+      <p>Elige tus favoritos y pídelos directamente por WhatsApp.</p>
+    </div>
+
+    <div class="filters" aria-label="Filtrar productos">
+      <button class="filter-button active" data-filter="todos">Todos</button>
+      <button class="filter-button" data-filter="pan">Panes</button>
+      <button class="filter-button" data-filter="postre">Postres</button>
+      <button class="filter-button" data-filter="otros">Otros</button>
+    </div>
+
+    <div class="product-grid catalog-grid">
+      <!-- Pan artesanal -->
+      <article class="product-card" data-category="pan">
+        <img src="imagenes/pan.webp" alt="Pan artesanal" loading="lazy">
+        <div class="product-info">
+          <h3>Pan artesanal</h3>
+          <p class="price">$8.000</p>
+          <script>document.write(crearBotonWhatsApp('Pan artesanal', '$8.000'));</script>
+        </div>
+      </article>
+
+      <!-- Torta de chocolate -->
+      <article class="product-card" data-category="postre">
+        <img src="imagenes/tortaCho.webp" alt="Torta de chocolate" loading="lazy">
+        <div class="product-info">
+          <h3>Torta de chocolate</h3>
+          <p class="price">$12.000</p>
+          <script>document.write(crearBotonWhatsApp('Torta de chocolate', '$12.000'));</script>
+        </div>
+      </article>
+
+      <!-- Croissant -->
+      <article class="product-card" data-category="otros">
+        <img src="imagenes/croissant.webp" alt="Croissant" loading="lazy">
+        <div class="product-info">
+          <h3>Croissant</h3>
+          <p class="price">$5.000</p>
+          <script>document.write(crearBotonWhatsApp('Croissant', '$5.000'));</script>
+        </div>
+      </article>
+
+      <!-- Postre de la casa -->
+      <article class="product-card" data-category="postre">
+        <img src="imagenes/Tiramisu.webp" alt="Postre en vaso" loading="lazy">
+        <div class="product-info">
+          <h3>Postre de la casa</h3>
+          <p class="price">$9.000</p>
+          <script>document.write(crearBotonWhatsApp('Postre de la casa', '$9.000'));</script>
+        </div>
+      </article>
+
+      <!-- Panecillos -->
+      <article class="product-card" data-category="pan">
+        <img src="imagenes/panecillos.webp" alt="Panecillos" loading="lazy">
+        <div class="product-info">
+          <h3>Panecillos</h3>
+          <p class="price">$6.000</p>
+          <script>document.write(crearBotonWhatsApp('Panecillos', '$6.000'));</script>
+        </div>
+      </article>
+
+      <!-- Galletas -->
+      <article class="product-card" data-category="otros">
+        <img src="imagenes/galletas.webp" alt="Galletas" loading="lazy">
+        <div class="product-info">
+          <h3>Galletas</h3>
+          <p class="price">$4.000</p>
+          <script>document.write(crearBotonWhatsApp('Galletas', '$4.000'));</script>
+
+        </div>
+      </article>
+
+      <!-- Rollos de canela -->
+      <article class="product-card" data-category="otros">
+        <img src="imagenes/RollosCanela.webp" alt="Rollos de canela" loading="lazy">
+        <div class="product-info">
+          <h3>Rollos de canela</h3>
+          <p class="price">$7.000</p>
+          <script>document.write(crearBotonWhatsApp('Rollos de canela', '$7.000'));</script>
+          
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© <span class="year"></span> Dulce Miga. Hecho con cariño.</p>
+    <p>Panadería artesanal</p>
+  </footer>
+</body>
+</html>

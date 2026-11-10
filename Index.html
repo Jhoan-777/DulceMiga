@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dulce Miga: panadería artesanal, panes y postres hechos con cariño.">
+  <title>Dulce Miga | Inicio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Dulce <span>Miga</span></a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <a class="active" href="Index.html">Inicio</a>
+      <a href="Productos.html">Productos</a>
+      <a href="Pedidos.html">Pedidos <span class="cart-count">0</span></a>
+      <a href="Nosotros.html">Nosotros</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">PANADERÍA ARTESANAL</p>
+        <h1>Un pequeño antojo,<br><span>un gran momento.</span></h1>
+        <p>Preparamos panes, postres y detalles deliciosos para acompañar tus días.</p>
+        <a class="button" href="productos.html">Descubrir productos</a>
+      </div>
+      
+        <img src="imagenes/logo.webp" alt="Dulce Miga" class="logo">
+      
+    </section>
+
+    <!-- SECCIÓN DEL CARRUSEL DE FOTOS EN EL INICIO -->
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">GALERÍA ARTESANAL</p>
+        <h2>Nuestros productos destacados</h2>
+        <p>Un vistazo a lo que preparamos con todo el cariño para ti.</p>
+      </div>
+
+      <div class="home-carousel">
+        <div class="carousel-track-container">
+          <div class="carousel-slide active">
+            <img src="imagenes/croissant.jpeg" alt="Croissant Hojaldrado">
+            <div class="carousel-caption">
+              <h3>Croissants Crujientes</h3>
+              <p>Horneados frescos cada mañana.</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="imagenes/tortaCho.jpeg" alt="Torta de Chocolate">
+            <div class="carousel-caption">
+              <h3>Torta de Chocolate</h3>
+              <p>Suave, húmeda y con cobertura de chocolate fino.</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="imagenes/pan.jpg" alt="Pan Artesanal">
+            <div class="carousel-caption">
+              <h3>Pan de Masa Madre</h3>
+              <p>Corteza perfecta y miga suave.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Botones de control del carrusel -->
+        <button class="carousel-btn prev" onclick="moveHomeSlide(-1)">&#10094;</button>
+        <button class="carousel-btn next" onclick="moveHomeSlide(1)">&#10095;</button>
+      </div>
+
+      <div class="center">
+        <a class="text-link" href="Productos.html">Ver todos los productos y pedir por WhatsApp →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span class="year"></span> Dulce Miga. Hecho con cariño.</p>
+    <p>Panadería artesanal</p>
+  </footer>
+</body>
+</html>
