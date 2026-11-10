@@ -122,3 +122,26 @@ function moveHomeSlide(step) {
   if (!slides.length) return; // Evita errores si la slide no existe en otra página
   // ... resto del código
 }
+
+// ==================================
+// VALIDACIÓN: BLOQUEAR NÚMEROS EN CAMPOS DE TEXTO
+// ==================================
+function validarSinNumeros(input) {
+  const errorSpan = document.getElementById(input.id + "-error");
+  
+  // Expresión regular que busca cualquier número del 0 al 9
+  const tieneNumeros = /\d/.test(input.value);
+
+  if (tieneNumeros) {
+    // Si escribe un número, lo eliminamos automáticamente del campo
+    input.value = input.value.replace(/\d/g, "");
+    
+    // Mostramos el mensaje de advertencia
+    if (errorSpan) {
+      errorSpan.style.display = "block";
+      setTimeout(() => {
+        errorSpan.style.display = "none";
+      }, 3000); // El mensaje desaparece a los 3 segundos
+    }
+  }
+}
