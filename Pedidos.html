@@ -58,7 +58,9 @@
         <h3>Enviar Pedido por WhatsApp</h3>
         <form id="whatsapp-order-form">
           <label for="name">Tu Nombre</label>
-          <input type="text" id="name" placeholder="Escribe tu nombre" required>
+          <!-- Validación añadida aquí -->
+          <input type="text" id="name" placeholder="Escribe tu nombre" oninput="validarSinNumeros(this)" required>
+          <span id="name-error" class="notice" style="color: var(--rose); display: none; margin-top: -4px; margin-bottom: 6px;">⚠️ No se permiten números en este campo.</span>
 
           <label for="product">Producto o Pedido</label>
           <input type="text" id="product" placeholder="Ej: Torta de chocolate o Pan artesanal" required>
